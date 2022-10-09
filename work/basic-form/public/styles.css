@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  background-color: rgb(127, 178, 241);
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  padding: 1rem;
+  background-color: rgb(229, 130, 130);
+}
+
+#root {
+  background-color: bisque;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.submissions {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.submissions label {
+  grid-column: span 2;
+}
+
+.submissions input {
+  grid-column: span 2;
+  padding: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.submissions button {
+  grid-column: span 2;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(65, 183, 65);
+  color: aliceblue;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+#annoy {
+  grid-column: 1;
+  width: 24px;
+  height: 24px;
+  justify-self: center;
+  align-self: center;
+}
+
+label[for="annoy"] {
+  grid-column: 2;
+}
+
+label[for="tier"] {
+  grid-column: 1;
+  align-self: center;
+}
+
+#tier {
+  grid-column: 2;
+  padding: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgb(235, 199, 108);
+}
+
+footer a {
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 640px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .submissions {
+    gap: 2rem;
+    margin-right: 2rem;
+  }
+
+  .submissions label {
+    grid-column: 1;
+    justify-self: end;
+    align-self: center;
+  }
+
+  .submissions input {
+    grid-column: 2;
+    margin-bottom: 0;
+  }
+
+  #annoy {
+    justify-self: end;
+  }
+
+  label[for="annoy"] {
+    grid-column: 2;
+  }
+
+  .submissions button {
+    margin: 0 0 0 3rem;
+  }
+} ;
