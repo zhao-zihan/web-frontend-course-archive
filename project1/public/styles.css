@@ -1,0 +1,241 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: rgb(144, 203, 248);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.header__icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.header__title {
+  font-size: 1.5rem;
+}
+
+/* NAVIGATION */
+
+.globalnav {
+  position: relative;
+}
+
+.globalnav__button {
+  padding: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #fff;
+}
+
+.globalnav__menu {
+  list-style: none;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.globalnav__menu li {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.globalnav__menu li:hover,
+.globalnav__menu li:active {
+  background-color: rgb(196, 191, 191);
+}
+
+.globalnav__item a {
+  text-decoration: none;
+}
+
+.globalnav:hover .globalnav__menu,
+.globalnav:active .globalnav__menu {
+  display: block;
+}
+
+@media screen and (min-width: 50rem) {
+  .header__title {
+    font-size: 2rem;
+  }
+}
+
+.page__title {
+  background-color: blanchedalmond;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* CARDS */
+
+.cards {
+  background-color: blanchedalmond;
+  padding: 2rem 2rem 5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.card {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.card.lifespan {
+  background-color: rgb(154, 82, 82);
+  color: aliceblue;
+}
+
+.card.diet {
+  background-color: rgb(189, 132, 242);
+}
+
+.card.habitats {
+  background-color: rgb(103, 103, 250);
+  color: aliceblue;
+}
+
+.card__title {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.card__pic {
+  width: max(90%, 60px);
+  max-height: 500px;
+}
+
+.card__text {
+  padding: 0rem 1rem;
+}
+
+.card a {
+  background-color: rgb(20, 183, 20);
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: aliceblue;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.card a:hover {
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 30rem) {
+  .card {
+    grid-column: span 4;
+  }
+
+  .card__title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 60rem) {
+  .cards {
+    padding: 2rem;
+  }
+
+  .card {
+    height: fit-content;
+  }
+}
+
+/* PARAGRAPHS */
+
+.about__paragraphs {
+  background-color: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 3rem 3rem 3rem;
+}
+
+.about__paragraphs p {
+  line-height: 1.8;
+}
+
+/* FORUM */
+
+.forum__root {
+  background-color: blanchedalmond;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 2rem 0;
+}
+
+.submissions {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 1rem;
+}
+
+.submissions label {
+  align-self: center;
+}
+
+.submissions input {
+  padding: 0.3rem;
+}
+
+label[for="rating"] {
+  grid-column: span 2;
+  margin-top: 1rem;
+}
+
+select {
+  grid-column: span 2;
+  padding: 0.3rem;
+}
+
+.submission__button {
+  grid-column: span 2;
+  padding: 1rem;
+  border: none;
+  background-color: rgb(133, 194, 40);
+  color: aliceblue;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.submission__button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  background-color: rgb(144, 203, 248);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
