@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="icon__wrapper">
+        <a href="index.html">
+          <img
+            class="header__icon"
+            src="https://images.unsplash.com/photo-1517334039387-b226c9bb90c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1030&q=80"
+            alt="Jellyfish floating in the ocean"
+          />
+        </a>
+        <h1 class="header__title">Jellyfish - Spirit of the Sea</h1>
+      </div>
+      <nav class="globalnav">
+        <button class="globalnav__button">Menu</button>
+        <ul class="globalnav__menu">
+          <li class="globalnav__item"><a href="index.html">Home</a></li>
+          <li class="globalnav__item"><a href="about.html">About</a></li>
+          <li class="globalnav__item"><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 class="page__title">Register info</h2>
+      <div class="forum__root">
+        <form class="submissions" action="/register" method="POST">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Required"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Required"
+          />
+
+          <input type="checkbox" name="beautiful" id="beautiful" />
+          <label for="beautiful">
+            <span>Do you like jellyfish?</span>
+          </label>
+
+          <label for="rating">Please rate this website:</label>
+          <select name="rating" id="rating">
+            <option value="">Please select</option>
+            <option value="5">5 star</option>
+            <option value="4">4 star</option>
+            <option value="3">3 star</option>
+            <option value="2">2 star</option>
+            <option value="1">1 star</option>
+          </select>
+
+          <button class="submission__button" type="submit">Register</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <small>&copy; Copyright 2022, Zihan Zhao</small>
+      <a href="privacy.html">privacy policy</a>
+    </footer>
+  </body>
+</html>
