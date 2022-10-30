@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script defer src="register.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Spam Email Register</h1>
+    </header>
+    <main id="root">
+      <form class="register" action="/register" method="POST">
+        <label for="name" class="register__name-label">Name:</label>
+        <input type="text" name="name" id="name" class="register__name-input" />
+        <div class="register__name-error">
+          <span class="register__name-error-default">
+            This field is required
+          </span>
+          <span class="register__name-error-validation error-message"
+            >You haven't filled in the name</span
+          >
+        </div>
+
+        <label for="email" class="register__email-label">Email:</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          class="register__email-input"
+        />
+        <span class="register__email-error">This field is required</span>
+
+        <label for="comfirm" class="register__confirm-label"
+          >Confirm Email:</label
+        >
+        <input
+          type="text"
+          name="confirm"
+          id="email"
+          class="register__confirm-input"
+        />
+        <span class="register__confirm-error"
+          >This field must match the email</span
+        >
+
+        <input
+          type="checkbox"
+          name="wants-spam"
+          id="want"
+          class="register__checkbox-input"
+        />
+        <label for="want" class="register__checkbox-label">
+          <span>Do you want spam emails?</span>
+        </label>
+
+        <label for="tier" class="register__select-label"> Tier: </label>
+        <select name="tier" id="tier" class="register__select-input">
+          <option value="">Please select</option>
+          <option value="1">Sliver Tier</option>
+          <option value="2">Gold Tier</option>
+          <option value="3">Platinum Tier</option>
+        </select>
+
+        <button class="register__submit" type="submit">Register</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <small>&copy; Copyright 2022, Zihan Zhao</small>
+    </footer>
+  </body>
+</html>
