@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(177, 82, 82);
+  color: white;
+}
+
+#root {
+  padding: 3rem 2rem;
+  background-color: rgb(167, 230, 209);
+}
+
+.register {
+  width: 55%;
+  margin: 0 auto;
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: 15% 85%;
+}
+
+.register__name-error-validation {
+  display: none;
+}
+
+.error-message {
+  color: red;
+}
+
+.register__name-label {
+  grid-column: span 2;
+}
+
+.register__name-input {
+  grid-column: span 2;
+  padding: 0.3rem 0;
+}
+
+.register__name-error {
+  grid-column: span 2;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-invalid .register__name-error-validation {
+  display: inline-block;
+}
+
+.register__email-label {
+  grid-column: span 2;
+}
+
+.register__email-input {
+  grid-column: span 2;
+  padding: 0.3rem 0;
+}
+
+.register__email-error {
+  grid-column: span 2;
+  margin-bottom: 1rem;
+}
+
+.register__confirm-label {
+  grid-column: span 2;
+}
+
+.register__confirm-input {
+  grid-column: span 2;
+  padding: 0.3rem 0;
+}
+
+.register__confirm-error {
+  grid-column: span 2;
+  margin-bottom: 1rem;
+}
+
+.register__checkbox-input {
+  grid-column: 1;
+  margin-bottom: 1rem;
+}
+
+.register__checkbox-label {
+  grid-column: 2;
+  margin-bottom: 1rem;
+}
+
+.register__select-label {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+}
+
+.register__select-input {
+  grid-column: 2;
+  padding: 0.3rem 0;
+}
+
+.register__submit {
+  grid-column: span 2;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  margin-top: 1rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: orange;
+  color: white;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.register__submit:hover {
+  cursor: pointer;
+}
+
+.footer {
+  padding: 3rem;
+  background-color: rgb(110, 110, 227);
+}
+
+@media screen and (min-width: 40rem) {
+  .register {
+    width: 65%;
+    grid-template-columns: 35% 65%;
+  }
+
+  .register__name-label {
+    grid-column: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .register__name-input {
+    grid-column: 2;
+  }
+
+  .register__name-error {
+    grid-column: 2;
+  }
+
+  .register__email-label {
+    grid-column: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .register__email-input {
+    grid-column: 2;
+  }
+
+  .register__email-error {
+    grid-column: 2;
+  }
+
+  .register__confirm-label {
+    grid-column: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .register__confirm-input {
+    grid-column: 2;
+  }
+
+  .register__confirm-error {
+    grid-column: 2;
+  }
+
+  .register__checkbox-input {
+    display: flex;
+    justify-self: flex-end;
+  }
+
+  .register__select-label {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .register {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 65rem) {
+  .register {
+    width: 35%;
+  }
+}
