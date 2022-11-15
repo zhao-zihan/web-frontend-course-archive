@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="site.js"></script>
+  </head>
+  <body>
+    <a
+      href="#main"
+      class="skip-to-main"
+      title="Click here to skip to main content"
+      aria-label="Click here to skip to main content"
+      >Skip to main content</a
+    >
+    <header class="header grid">
+      <a class="header__icon-link" href="index.html">
+        <img
+          class="header__icon-image"
+          src="http://placekitten.com/100/100"
+          alt=""
+        />
+      </a>
+      <h1 class="header__title">Cats Power the Internet</h1>
+      <nav class="globalnav">
+        <button class="globalnav__button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-5 h-5 globalnav__icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+        <ul class="globalnav__menu">
+          <li class="globalnav__item"><a href="index.html">Home</a></li>
+          <li class="globalnav__item"><a href="cats.html">Famous Cats</a></li>
+          <li class="globalnav__item"><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main grid">
+      <dialog class="modal">
+        <div class="modal__content">
+          <h3 class="modal__title">Subscribe to the latest mews!</h3>
+          <form class="register" action="/subscribe" method="POST">
+            <label for="email" class="register__label register__email-label"
+              >Email:
+            </label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="register__input register__email-input"
+            />
+            <span class="register__error register__email-error"
+              >This field is required</span
+            >
+            <label for="comfirm" class="register__label register__confirm-label"
+              >Confirm Email:
+            </label>
+            <input
+              type="text"
+              name="confirm"
+              id="email"
+              class="register__input register__confirm-input"
+            />
+            <span class="register__error register__confirm-error"
+              >This field must match the email</span
+            >
+            <div class="register__buttons">
+              <button class="register__button-subscribe" type="submit">
+                Subscribe
+              </button>
+              <button class="register__button-cancel" type="button">
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+      </dialog>
+      <div class="cards">
+        <div class="card">
+          <h2 class="card__title">Lil Bub</h2>
+          <img
+            class="card__image"
+            src="http://placekitten.com/200/200?image=1"
+            alt="Lil Bub is watching you through his blue eyes"
+          />
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            necessitatibus, molestias voluptatem incidunt voluptate facere
+            voluptates nam explicabo ut doloremque cum, modi rem accusamus!
+            Quibusdam fugit minus laudantium
+            <button
+              class="card__button"
+              aria-label="Click here to subscribe to the latest mews"
+              type="button"
+            >
+              Subscribe
+            </button>
+            tenetur harum.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="card__title">Jorts</h2>
+          <img
+            class="card__image"
+            src="http://placekitten.com/200/200?image=2"
+            alt="Jorts standing on a chair with his friends"
+          />
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            necessitatibus, molestias voluptatem incidunt voluptate facere
+            voluptates nam explicabo ut doloremque cum, modi rem accusamus!
+            Quibusdam fugit minus laudantium
+            <button
+              class="card__button"
+              aria-label="Click here to subscribe to the latest mews"
+              type="button"
+            >
+              Subscribe
+            </button>
+            tenetur harum.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="card__title">Jean</h2>
+          <img
+            class="card__image"
+            src="http://placekitten.com/200/200?image=3"
+            alt="Jean casually walking in the snow"
+          />
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            necessitatibus, molestias voluptatem incidunt voluptate facere
+            voluptates nam explicabo ut doloremque cum, modi rem accusamus!
+            Quibusdam fugit minus laudantium
+            <button
+              class="card__button"
+              aria-label="Click here to subscribe to the latest mews"
+              type="button"
+            >
+              Subscribe
+            </button>
+            tenetur harum.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="card__title">Maru</h2>
+          <img
+            class="card__image"
+            src="http://placekitten.com/200/200?image=4"
+            alt="Maru leaning on the door"
+          />
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            necessitatibus, molestias voluptatem incidunt voluptate facere
+            voluptates nam explicabo ut doloremque cum, modi rem accusamus!
+            Quibusdam fugit minus laudantium
+            <button
+              class="card__button"
+              aria-label="Click here to subscribe to the latest mews"
+              type="button"
+            >
+              Subscribe
+            </button>
+            tenetur harum.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="card__title">Nyancat</h2>
+          <img
+            class="card__image"
+            src="http://placekitten.com/200/200?image=5"
+            alt="A hand is holding little Nyancat"
+          />
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            necessitatibus, molestias voluptatem incidunt voluptate facere
+            voluptates nam explicabo ut doloremque cum, modi rem accusamus!
+            Quibusdam fugit minus laudantium
+            <button
+              class="card__button"
+              aria-label="Click here to subscribe to the latest mews"
+              type="button"
+            >
+              Subscribe
+            </button>
+            tenetur harum.
+          </p>
+        </div>
+        <div class="card">
+          <h2 class="card__title">Grumpy Cat</h2>
+          <img
+            class="card__image"
+            src="http://placekitten.com/200/200?image=6"
+            alt="Grumpy crawling on the desk"
+          />
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            necessitatibus, molestias voluptatem incidunt voluptate facere
+            voluptates nam explicabo ut doloremque cum, modi rem accusamus!
+            Quibusdam fugit minus laudantium
+            <button
+              class="card__button"
+              aria-label="Click here to subscribe to the latest mews"
+              type="button"
+            >
+              Subscribe
+            </button>
+            tenetur harum.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer grid">
+      <ul class="footer__links">
+        <li><a class="footer__link" href="privacy.html">Privacy Policy</a></li>
+        <li><a class="footer__link" href="work.html">Work for Us</a></li>
+        <li><a class="footer__link" href="cantact.html">Contact Us</a></li>
+        <li><a class="footer__link" href="social.html">Social Media</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
