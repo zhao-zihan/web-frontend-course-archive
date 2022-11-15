@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: rgb(147, 147, 235);
+  display: grid;
+  place-content: center;
+}
+
+.app {
+  padding: 3rem;
+  background-color: bisque;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+.btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100px;
+  border: 1px solid black;
+  font-size: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+
+.reorder__button {
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(59, 187, 59);
+  color: white;
+  border-radius: 5px;
+
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
