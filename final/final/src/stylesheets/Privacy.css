@@ -1,0 +1,19 @@
+.privacy {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.privacy__paragraph {
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 50rem) {
+  .privacy {
+    max-width: 50%;
+  }
+}

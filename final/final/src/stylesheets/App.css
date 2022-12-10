@@ -1,0 +1,21 @@
+.skip-to-main {
+  position: absolute;
+  left: -200px;
+  top: -200px;
+}
+
+.skip-to-main:focus {
+  left: 30px;
+  top: 30px;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  z-index: 3;
+  text-decoration: none;
+}
+
+.app {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}

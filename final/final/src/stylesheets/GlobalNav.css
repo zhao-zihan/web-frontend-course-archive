@@ -1,0 +1,49 @@
+.global-nav__button {
+  width: 2rem;
+  height: 2rem;
+  background-color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid #fff;
+}
+
+.global-nav__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  right: 0.5rem;
+  background-color: #605b56;
+  border: 1px solid #fff;
+  z-index: 3;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.global-nav__link {
+  text-decoration: none;
+  color: white;
+}
+
+.global-nav__item:hover {
+  cursor: pointer;
+  background-color: rgb(156, 156, 243);
+}
+
+@media screen and (min-width: 44rem) {
+  .global-nav {
+    grid-row: span 2;
+  }
+
+  .global-nav__menu {
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    border: none;
+    width: 100%;
+    right: 0;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+}
