@@ -1,0 +1,11 @@
+All images are from Unsplash: https://unsplash.com/license
+
+hero image: https://images.unsplash.com/photo-1532191343016-47bf741b8b3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80
+
+icon image: https://images.unsplash.com/photo-1517334039387-b226c9bb90c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1030&q=80
+
+lifespan card image: https://images.unsplash.com/photo-1599499865410-656f187adf74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80
+
+diet card image: https://images.unsplash.com/photo-1598275317619-f078974430fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80
+
+habitats card image: https://images.unsplash.com/photo-1495037507835-3d9cc8e30db7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80
