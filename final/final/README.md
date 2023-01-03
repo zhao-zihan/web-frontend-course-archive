@@ -2,6 +2,8 @@
 
 This is a single page application about jellyfish built with React.js. The website contains five pages including home, cards, register, FAQ, and feedback.
 
+![](markdown-img/2023-01-02-22-22-50.png)
+
 ---
 
 ## How To Use
